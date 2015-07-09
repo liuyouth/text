@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#575757"
+    android:orientation="vertical" >
+    
+      
+           
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:divider="@null" 
+        android:background="#20ffffff"
+        >
+        
+       <!--   android:background="#00C5CD"-->
+
+        <ImageButton
+            android:id="@+id/menu_imgbtn"
+            android:layout_width="18dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="1dp"
+            android:background="@drawable/download" />
+
+        <TextView
+            android:id="@+id/menuListTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+          <ImageButton
+            android:id="@+id/seach_imgbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+           android:layout_marginTop="0dp"
+           
+            android:background="@drawable/seach" />
+    
+    </RelativeLayout>
+ 
+         <com.zihao.ui.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        >
+
+        <ListView
+              android:fadingEdge="none"
+            android:dividerHeight="0.3dp"
+            android:id="@+id/songlistView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+          android:focusable="false"
+          
+            
+            
+        android:divider="@null"
+        
+        android:cacheColorHint="@android:color/transparent"
+             >
+        </ListView>
+    </com.zihao.ui.RefreshableView>
+
+
+     
+  
+</LinearLayout>
